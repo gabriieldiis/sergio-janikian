@@ -1,0 +1,11 @@
+text
+# Pastas de ferramentas e editor
+.vscode/
+.agents/
+.docs/
+
+# Arquivos temporários ou de backup
+_pdf/
+docs/
+index-guardar.html
+skills-lock.json
