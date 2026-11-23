@@ -136,7 +136,7 @@
   $$('[data-chapters]').forEach(function (box) {
     var imgs = $$('.caps__fotos img', box);
     var bars = $$('.caps__nav button', box);
-    var cur = 0, auto = !reduce, paused = false, visible = false, t0 = 0, DUR = 7000;
+    var cur = 0, auto = !reduce && fine, paused = false, visible = false, t0 = 0, DUR = 7000;
     var api = setupTabs(box, function (i, user) {
       cur = i;
       var id = bars[i].getAttribute('aria-controls');

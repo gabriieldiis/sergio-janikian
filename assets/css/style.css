@@ -145,7 +145,7 @@ h3{font-size:clamp(22px,1.7vw,28px);font-weight:700;line-height:1;letter-spacing
 .hero__text{grid-column:1 / span 6;align-self:center;position:relative;z-index:2;padding:32px 0}
 .hero__notice{display:flex;align-items:center;gap:12px;font:600 15px/1 var(--display);letter-spacing:.12em;text-transform:uppercase;color:var(--cream-muted);margin-bottom:22px}
 .tag{background:var(--gold);color:var(--g-dark);padding:6px 10px 5px;letter-spacing:.08em}
-.hero h1{font-size:clamp(72px,8.6vw,136px);line-height:.84;letter-spacing:-.015em}
+.hero h1{font-size:clamp(72px,8.6vw,124px);line-height:.84;letter-spacing:-.015em}
 .hero h1 .m-line{display:block}
 .hero__lead{margin-top:24px;font-size:clamp(17px,1.3vw,20px);line-height:1.55;color:#D9D2C3;max-width:34em}
 .hero .btn-row{margin-top:30px}
@@ -174,15 +174,15 @@ h3{font-size:clamp(22px,1.7vw,28px);font-weight:700;line-height:1;letter-spacing
 
 /* ---------- PILARES: painéis que expandem ---------- */
 .pilares{display:flex;gap:10px;height:440px}
-.pilar{position:relative;flex:1 1 0;min-width:0;overflow:hidden;background:var(--g-dark);color:var(--cream);padding:28px 24px;cursor:pointer;
+.pilar{position:relative;flex:1 1 0;min-width:0;overflow:hidden;background:var(--g-dark);color:var(--cream);padding:28px 20px;cursor:pointer;
        display:flex;flex-direction:column;justify-content:flex-end;transition:flex-grow 520ms var(--ease-out),background-color 300ms}
 .pilar::before{content:"";position:absolute;left:0;top:0;height:4px;width:100%;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform 520ms var(--ease-out)}
 .pilar::after{content:"";position:absolute;right:-60px;bottom:-60px;width:220px;height:220px;background:url(../img/logos/logo-referencia-3.png) center/contain no-repeat;opacity:0;transform:rotate(-12deg) scale(.8);transition:opacity 400ms,transform 600ms var(--ease-out)}
 .pilar__num{position:absolute;top:18px;left:22px;font:800 64px/1 var(--display);color:var(--gold);transition:font-size 400ms var(--ease-out)}
-.pilar h3{position:relative;z-index:1;font-size:20px;line-height:1.05;max-width:10em;hyphens:auto;-webkit-hyphens:auto;transition:font-size 300ms var(--ease-out)}
+.pilar h3{position:relative;z-index:1;font-size:18px;line-height:1.05;max-width:10em;hyphens:auto;-webkit-hyphens:auto;transition:font-size 300ms var(--ease-out)}
 .pilar.is-open h3{font-size:28px}
 .pilar p{position:relative;z-index:1;margin-top:14px;color:#D9D2C3;font-size:17px;line-height:1.5;max-width:30ch;opacity:0;transform:translateY(10px);max-height:0;transition:opacity 200ms,transform 300ms var(--ease-out),max-height 0s 250ms}
-.pilar.is-open{flex-grow:2.6;background:var(--g-dark-3)}
+.pilar.is-open{flex-grow:2.2;background:var(--g-dark-3)}
 .pilar.is-open::before{transform:scaleX(1)}
 .pilar.is-open::after{opacity:.1;transform:rotate(-12deg) scale(1)}
 .pilar.is-open .pilar__num{font-size:120px}
@@ -309,7 +309,7 @@ h3{font-size:clamp(22px,1.7vw,28px);font-weight:700;line-height:1;letter-spacing
 .card:hover::after{transform:scaleX(1)}
 .card__n{position:absolute;right:20px;top:10px;font:800 72px/1 var(--display);color:rgba(201,163,90,.25);transition:color 250ms}
 .card:hover .card__n{color:var(--gold)}
-.card h3{margin-bottom:18px;font-size:28px}
+.card h3{margin-bottom:18px;font-size:28px;padding-right:64px}
 
 /* ---------- COMPROMISSOS + MANIFESTO ---------- */
 .comp{position:sticky;top:calc(var(--nav) + 32px)}
@@ -380,6 +380,23 @@ h3{font-size:clamp(22px,1.7vw,28px);font-weight:700;line-height:1;letter-spacing
 .m-enter.m-in .hero .m-settle{transition-delay:150ms}
 .m-enter-done:not(.m-in) .hero .m-line,.m-enter-done:not(.m-in) .hero .m-settle{opacity:1;transform:none}
 
+/* notebooks pequenos (1024–1279): pilares em grade 3×2, todos abertos */
+@media (min-width:1024px) and (max-width:1279px){
+  .hint{display:none}
+  .pilares{display:grid;grid-template-columns:repeat(3,1fr);height:auto;gap:10px}
+  .pilar{min-height:0;padding:24px 24px 28px;justify-content:flex-start;cursor:default}
+  .pilar::after{display:none}
+  .pilar__num{position:static;margin-bottom:14px}
+  .hero__retrato{height:80%;left:-14%}
+  .hero__num{font-size:22vw;right:-3%;top:2%}
+  .pilar::before{transform:scaleX(1)}
+  .pilar__num,.pilar.is-open .pilar__num{font-size:56px}
+  .pilar h3,.pilar.is-open h3{font-size:24px;max-width:none}
+  .pilar p,.pilar.is-open p{opacity:1;transform:none;max-height:none;transition:none}
+  .pilar.is-open{background:var(--g-dark)}
+  .pilar.is-open::after{opacity:0}
+}
+
 /* =========================================================================
    Tablet e celular (provisório: empilha; refinamos depois do desktop)
    ========================================================================= */
@@ -449,6 +466,151 @@ h3{font-size:clamp(22px,1.7vw,28px);font-weight:700;line-height:1;letter-spacing
   .actionbar{display:grid;grid-template-columns:1fr 1fr;gap:10px;position:fixed;inset:auto 0 0;z-index:28;background:var(--g-dark);border-top:1px solid rgba(201,163,90,.35);padding:8px var(--gut) calc(8px + env(safe-area-inset-bottom));transition:transform 200ms var(--ease)}
   .actionbar.is-hidden{transform:translateY(110%);visibility:hidden;transition:transform 150ms,visibility 0s 150ms}
   .actionbar .btn{padding:0 10px;font-size:16px}
+}
+
+/* =========================================================================
+   Celular (até 639px) — refinamento
+   ========================================================================= */
+@media (max-width:639px){
+  body{font-size:16px}
+  h2{font-size:clamp(38px,11vw,48px)}
+  .head{margin-bottom:28px}
+  .head--row{row-gap:14px}
+  .kicker{font-size:13px;margin-bottom:10px}
+  .lead{font-size:17px}
+  .nota{font-size:16px;margin-top:28px}
+
+  /* hero compacto */
+  .hero{min-height:0}
+  .hero__text{padding:24px 0 8px}
+  .hero__notice{font-size:13px;margin-bottom:16px}
+  .hero h1{font-size:clamp(54px,15.5vw,68px)}
+  .hero__lead{margin-top:16px;font-size:16px;line-height:1.5}
+  .hero .btn-row{margin-top:22px;gap:10px}
+  .countdown{margin-top:22px;flex-direction:row;align-items:center;gap:12px}
+  .countdown__label{font-size:12px;max-width:5.5em}
+  .countdown__grid{flex:1;gap:6px}
+  .countdown__grid div{padding:8px 4px 6px}
+  .countdown__grid b{font-size:26px}
+  .countdown__grid span{font-size:10px;letter-spacing:.1em}
+  .hero__art{min-height:330px;margin-top:8px}
+  .hero__retrato{height:100%;transform:translateX(-66%)}
+  .hero__num{bottom:6%;right:-2%;font-size:58vw}
+  .marquee__track{padding:12px 0}
+  .marquee span{font-size:18px}
+
+  /* pilares: acordeão com indicador */
+  .pilar{grid-template-columns:52px 1fr 24px;padding:18px 18px}
+  .pilar__num{font-size:34px}
+  .pilar.is-open .pilar__num{font-size:34px}
+  .pilar h3,.pilar.is-open h3{font-size:20px}
+  .pilar p{font-size:16px}
+  .pilar::after{display:block;content:"+";position:static;grid-column:3;grid-row:1;width:auto;height:auto;background:none;opacity:1;transform:none;
+                font:700 26px/1 var(--display);color:var(--gold);text-align:right;transition:transform 300ms var(--ease-out)}
+  .pilar.is-open::after{transform:rotate(45deg);opacity:1}
+
+  /* 100 dias: trilha antes da entrega */
+  #cem-dias .split{display:flex;flex-direction:column}
+  #cem-dias .split__a{display:contents}
+  #cem-dias .kicker{order:0}
+  .cem__num{order:1;font-size:150px}
+  .cem__dias{order:2;font-size:34px}
+  .cem h2{order:3;font-size:28px;margin-top:14px}
+  #cem-dias .split__b{order:4;margin-top:28px}
+  .entrega{order:5;margin-top:24px}
+  .trilha li{font-size:16px;padding:13px 0 13px 4px}
+
+  /* finanças */
+  .rotulo{font-size:19px}
+  .tetos{padding:24px 22px;gap:22px}
+  .teto strong{font-size:26px}
+  .teto strong span{font-size:54px}
+  .teto > span{font-size:15px;margin-top:4px}
+  .regra{padding:18px 20px}
+
+  /* abas como chips */
+  .tabs__list{display:grid;grid-template-columns:1fr 1fr;gap:8px;border:0}
+  .tabs__list button{justify-content:center;margin:0;padding:13px 8px;font-size:16px;border:1.5px solid var(--line);background:transparent;white-space:normal;text-align:center;line-height:1.1}
+  .tabs__list button span{display:none}
+  .tabs__list button::after{display:none}
+  .tabs__list button[aria-selected="true"]{background:var(--ink);color:var(--cream);border-color:var(--ink)}
+  .tabs--sm .tabs__list button{font-size:16px;padding:13px 8px;margin:0}
+  .tabs__panel{padding-top:24px}
+  .painel{min-height:0;row-gap:16px}
+  .painel__titulo{font-size:28px}
+  .painel__a p{font-size:16px}
+  .painel__b{font-size:16px}
+
+  /* futebol */
+  .caps{row-gap:20px}
+  .caps__nav button{grid-template-columns:44px 1fr;padding:14px 0}
+  .caps__nav button[aria-selected="true"]{padding-left:8px}
+  .caps__n{font-size:24px}
+  .caps__t{font-size:24px}
+  .caps__t small{font-size:12px}
+  .caps__fotos{min-height:0;aspect-ratio:4/3}
+  .caps__panel > p{font-size:16px}
+  .meta{padding:14px 16px;column-gap:14px}
+  .meta strong{font-size:44px}
+
+  /* arena + marketing */
+  .mkt__foto{min-height:0;aspect-ratio:4/5}
+  .mkt__caixa{left:12px;right:12px;bottom:12px;padding:18px 20px}
+  .mkt__arena{font-size:30px}
+  .mkt__caixa p{font-size:15px}
+
+  /* fiel + psj */
+  .linhas{margin-top:22px}
+  .linhas li{grid-template-columns:36px 1fr;font-size:15.5px;padding:12px 0}
+  .psj__corpo{padding:22px 20px 26px}
+  .psj__corpo h3{font-size:28px}
+  .psj__corpo > p{font-size:16px}
+
+  /* social */
+  .cards3{gap:12px}
+  .card{padding:22px 20px}
+  .card__n{font-size:44px;top:14px;right:16px}
+  .card h3{font-size:24px;padding-right:56px;margin-bottom:14px}
+
+  /* compromissos + manifesto */
+  .compromissos li{grid-template-columns:44px 1fr;font-size:17px;padding:18px 10px 18px 0}
+  .compromissos li::before{font-size:26px}
+  .compromissos li.is-on{padding-left:10px}
+  .manifesto{margin-top:56px;padding-top:40px;row-gap:24px}
+  .manifesto__frase{font-size:clamp(38px,11vw,48px)}
+  .manifesto__logo{max-width:150px}
+
+  /* fechamento */
+  .close{row-gap:20px}
+  .close__a{display:flex;align-items:flex-end;gap:16px;flex-wrap:wrap}
+  .close__num{font-size:150px}
+  .countdown--dark{margin-top:0;flex:1;min-width:220px}
+  .close h2{font-size:clamp(40px,11.5vw,52px)}
+  .info{margin-top:20px}
+  .info dd{font-size:16px}
+  .close__links{flex-direction:column;gap:0}
+  .dir{margin-top:48px;row-gap:12px}
+  .dir__links{gap:0 20px}
+  .closing{padding-bottom:calc(32px + env(safe-area-inset-bottom))}
+}
+
+/* notebooks (1280–1439): painéis fechados um pouco mais largos */
+@media (min-width:1280px) and (max-width:1439px){
+  .pilar{padding:28px 16px}
+  .pilar.is-open{flex-grow:1.9}
+}
+/* tablet (640–1023): indicador do acordeão dos pilares */
+@media (min-width:640px) and (max-width:1023px){
+  .pilar{grid-template-columns:64px 1fr 28px}
+  .pilar::after{display:block;content:"+";position:static;grid-column:3;grid-row:1;width:auto;height:auto;background:none;opacity:1;transform:none;
+                font:700 28px/1 var(--display);color:var(--gold);text-align:right;transition:transform 300ms var(--ease-out)}
+  .pilar.is-open::after{transform:rotate(45deg);opacity:1}
+}
+/* celulares estreitos (até 374px) */
+@media (max-width:374px){
+  .btn{padding:0 14px;font-size:16px;letter-spacing:.03em}
+  .hero h1{font-size:50px}
+  .countdown__label{display:none}
 }
 
 @media (prefers-reduced-motion:reduce){
