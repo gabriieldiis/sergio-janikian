@@ -98,6 +98,10 @@ h3{font-size:clamp(21px,1.6vw,26px);font-weight:700;line-height:1;letter-spacing
 .nav__btn{min-height:42px;padding:0 20px;border-radius:999px}
 .nav__btn b{font-weight:800}
 .nav__toggle{display:none;width:44px;height:44px;align-items:center;justify-content:center;background:rgba(243,238,228,.06);color:var(--cream);border:1px solid rgba(201,163,90,.4);border-radius:999px;cursor:pointer}
+.nav__cta{display:none}
+.nav__toggle path{transform-box:fill-box;transform-origin:center;transition:transform 250ms var(--ease)}
+.nav.is-open .nav__toggle .l1{transform:translateY(4px) rotate(45deg)}
+.nav.is-open .nav__toggle .l2{transform:translateY(-4px) rotate(-45deg)}
 .nav__progress{position:absolute;left:0;right:0;bottom:-1px;height:2px}
 .nav__progress i{display:block;height:100%;background:linear-gradient(90deg,var(--gold),var(--gold-hi));transform-origin:left;transform:scaleX(var(--p,0))}
 
@@ -532,7 +536,7 @@ h3{font-size:clamp(21px,1.6vw,26px);font-weight:700;line-height:1;letter-spacing
 @media (max-width:1023px){
   .nav__bar{grid-template-columns:1fr auto}
   .nav.is-open{background:var(--g-dark)}
-  .nav__links{position:fixed;inset:var(--nav) 0 0;flex-direction:column;align-items:stretch;justify-content:flex-start;gap:0;margin:0;padding:24px var(--gut);border:0;border-radius:0;background:var(--g-dark);backdrop-filter:none;visibility:hidden;opacity:0;transition:opacity 150ms,visibility 0s 150ms}
+  .nav__links{position:fixed;inset:var(--nav) 0 0;justify-self:stretch;width:auto;height:auto;overflow-y:auto;overscroll-behavior:contain;flex-direction:column;align-items:stretch;justify-content:flex-start;gap:0;margin:0;padding:24px var(--gut);border:0;border-radius:0;background:var(--g-dark);backdrop-filter:none;visibility:hidden;opacity:0;transition:opacity 150ms,visibility 0s 150ms}
   .nav.is-open .nav__links{visibility:visible;opacity:1;transition:opacity 200ms}
   .nav__link,.nav__link:hover,.nav__link.is-current{height:auto;min-height:60px;padding:0;border-radius:0;background:none;font:800 30px/1 var(--display);text-transform:uppercase;color:var(--cream);display:flex;align-items:center;border-bottom:1px solid var(--line-d)}
   .nav__link.is-current{color:var(--gold)}
@@ -568,6 +572,7 @@ h3{font-size:clamp(21px,1.6vw,26px);font-weight:700;line-height:1;letter-spacing
 @media (max-width:639px){
   .nav__logo img{height:34px}
   .nav__btn{display:none}
+  .nav__cta{display:flex;justify-content:center;margin-top:28px;min-height:54px;border-radius:999px;font-size:18px}
   h2{font-size:clamp(36px,10.5vw,46px)}
   .pnum{font-size:13px}
   .lead{font-size:17px}
