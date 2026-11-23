@@ -184,6 +184,7 @@ h3{font-size:clamp(21px,1.6vw,26px);font-weight:700;line-height:1;letter-spacing
 .hero__cdv{height:clamp(66px,6vw,84px);width:auto}
 .hero__foto{position:relative;background:#fff;overflow:hidden}
 .hero__foto img{position:absolute;inset:0;width:100%;height:100%;max-width:none;object-fit:cover;object-position:50% 12%}
+.hero__foto-mob{display:none}
 
 .countdown{display:flex;align-items:center;gap:16px}
 .countdown__label{font:700 13px/1.15 var(--display);letter-spacing:.12em;text-transform:uppercase;color:var(--gold);max-width:6.5em}
@@ -542,7 +543,7 @@ h3{font-size:clamp(21px,1.6vw,26px);font-weight:700;line-height:1;letter-spacing
   .hero__escuro{padding:48px var(--gut) 56px}
   .hero__text{max-width:none}
   .hero__foto{height:min(80vw,560px)}
-  .hero__foto img{object-position:50% 14%}
+  .hero__foto img{object-position:50% 0}
   .split,.pg02,.pg03,.pg-head,.close,.dir,.pg13__grid,.meta{grid-template-columns:1fr;row-gap:32px}
   .split__a,.split__b,.pg02__main,.indice,.pg03__a,.pg03__b,.pg-head > *,.close__a,.close__text,.dir__logo,.dir__links,.dir__legal,.pg13__a,.pg13__b,.meta > *{grid-column:1 !important}
   .pg-head > :last-child{justify-self:start}
@@ -584,6 +585,14 @@ h3{font-size:clamp(21px,1.6vw,26px);font-weight:700;line-height:1;letter-spacing
   .hero .btn{width:100%}
   .hero__foot{margin-top:22px;gap:16px}
   .hero__cdv{height:52px}
+  /* foto ao lado do logo + título, só no mobile */
+  .hero__foto{display:none}
+  .hero__text{display:grid;grid-template-columns:auto minmax(0,1fr);column-gap:14px}
+  .hero__text > *{grid-column:1 / -1}
+  .hero__logo{grid-column:1;grid-row:2;justify-self:start}
+  .hero h1{grid-column:1;grid-row:3}
+  .hero__foto-mob{display:block;grid-column:2;grid-row:2 / 4;width:100%;height:100%;contain:size;object-fit:cover;object-position:50% 0;
+                  background:#fff;border-radius:14px;border:1px solid rgba(200,163,90,.55)}
   .countdown{width:100%}
   .countdown__label{font-size:12px;max-width:5.5em}
   .countdown__grid{flex:1}
