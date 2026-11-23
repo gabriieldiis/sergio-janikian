@@ -1,24 +1,23 @@
 <!DOCTYPE html>
-<!-- Sergio Janikian Presidente — Corinthians de Verdade — Vote 05
-     Identidade: PDF "Plano de Governo 2027-2029" (preto, creme, ouro; títulos condensados em caixa alta).
-     Interações: contagem regressiva, faixa corrida, pilares que expandem, contadores, linha do tempo que acende,
-     abas, capítulos do futebol com troca de foto, foto que revela a cor, frase que acende, agenda e compartilhamento. -->
-<html lang="pt-BR" data-type="service">
+<!-- Sergio Janikian Presidente — Plano de Governo 2027-2029
+     Estrutura: uma seção por página do PDF, na mesma ordem e com o mesmo conteúdo (páginas 01 a 15).
+     Depois da página 15, o bloco "Vote 05" com as informações da eleição. -->
+<html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Sergio Janikian Presidente – Corinthians de Verdade – Vote 05</title>
+<title>Sergio Janikian Presidente – Plano de Governo 2027-2029 – Vote 05</title>
 <meta name="description" content="Plano de Governo 2027-2029 de Sergio Janikian para o Corinthians. O Corinthians precisa mudar seu modelo de gestão. Vote 05.">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Sergio Janikian Presidente – Corinthians de Verdade">
-<meta property="og:description" content="Plano de Governo 2027-2029. Vote 05.">
+<meta property="og:title" content="Sergio Janikian Presidente – Plano de Governo 2027-2029">
+<meta property="og:description" content="O Corinthians precisa mudar seu modelo de gestão. Vote 05.">
 <meta property="og:image" content="assets/img/fotos/sergio-janikian.webp">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#100F0D">
 <link rel="icon" href="assets/img/logos/logo-referencia-3.png" type="image/png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,500;0,600;0,700;0,800;1,500&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
 <script>document.documentElement.classList.add('js','m-enter');setTimeout(function(){document.documentElement.classList.add('m-enter-done')},900)</script>
 <script src="assets/js/main.js" defer></script>
@@ -28,7 +27,7 @@
 <header class="nav">
   <div class="wrap nav__bar">
     <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
-    <a class="nav__logo" href="#inicio" aria-label="Sergio Janikian Presidente, início">
+    <a class="nav__logo" href="#manifesto" aria-label="Sergio Janikian Presidente, início">
       <img src="assets/img/logos/logo-referencia-2.png" alt="" width="464" height="114">
     </a>
     <nav class="nav__links" id="menu" aria-label="Seções">
@@ -36,138 +35,165 @@
       <a class="nav__link" href="#cem-dias">100 dias</a>
       <a class="nav__link" href="#financas">Finanças</a>
       <a class="nav__link" href="#futebol">Futebol</a>
-      <a class="nav__link" href="#compromissos">Compromissos</a>
+      <a class="nav__link" href="#compromisso">Compromisso</a>
     </nav>
-    <p class="nav__count"><span class="dot" aria-hidden="true"></span><span data-cd-text>28 de novembro</span></p>
-    <a class="btn btn--primary nav__btn" href="#votar">Vote <b>05</b></a>
-    <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu">
-      <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M3 6h14M3 14h14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
-    </button>
+    <div class="nav__right">
+      <p class="nav__count"><span class="dot" aria-hidden="true"></span><span data-cd-text>28 de novembro</span></p>
+      <a class="btn btn--primary nav__btn" href="#votar">Vote <b>05</b></a>
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu">
+        <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M3 6h14M3 14h14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </button>
+    </div>
   </div>
   <div class="nav__progress" aria-hidden="true"><i></i></div>
 </header>
 
-<!-- índice lateral (desktop) -->
+<!-- índice lateral: as 15 páginas do plano -->
 <nav class="dots" aria-label="Índice da página">
-  <a href="#inicio" data-label="Início"><span class="sr-only">Início</span></a>
-  <a href="#pilares" data-label="Pilares"><span class="sr-only">Pilares</span></a>
-  <a href="#cem-dias" data-label="100 dias"><span class="sr-only">100 dias</span></a>
-  <a href="#financas" data-label="Finanças"><span class="sr-only">Finanças</span></a>
-  <a href="#gestao" data-label="Gestão"><span class="sr-only">Gestão</span></a>
-  <a href="#futebol" data-label="Futebol"><span class="sr-only">Futebol</span></a>
-  <a href="#arena" data-label="Receitas"><span class="sr-only">Receitas</span></a>
-  <a href="#fiel" data-label="A Fiel"><span class="sr-only">A Fiel</span></a>
-  <a href="#social" data-label="Social"><span class="sr-only">Social</span></a>
-  <a href="#compromissos" data-label="Compromissos"><span class="sr-only">Compromissos</span></a>
+  <a href="#manifesto" data-label="01 Manifesto"><span class="sr-only">01 Manifesto</span></a>
+  <a href="#pilares" data-label="02 Pilares da gestão"><span class="sr-only">02 Pilares da gestão</span></a>
+  <a href="#cem-dias" data-label="03 Primeiros 100 dias"><span class="sr-only">03 Primeiros 100 dias</span></a>
+  <a href="#financas" data-label="04 Responsabilidade financeira"><span class="sr-only">04 Responsabilidade financeira</span></a>
+  <a href="#integridade" data-label="05 Integridade"><span class="sr-only">05 Integridade</span></a>
+  <a href="#transparencia" data-label="06 Gestão e transparência"><span class="sr-only">06 Gestão e transparência</span></a>
+  <a href="#futebol" data-label="07 Futebol profissional"><span class="sr-only">07 Futebol profissional</span></a>
+  <a href="#base" data-label="08 Categorias de base"><span class="sr-only">08 Categorias de base</span></a>
+  <a href="#feminino" data-label="09 Futebol feminino"><span class="sr-only">09 Futebol feminino</span></a>
+  <a href="#marketing" data-label="10 Marketing e comercial"><span class="sr-only">10 Marketing e comercial</span></a>
+  <a href="#arena" data-label="11 Neo Química Arena"><span class="sr-only">11 Neo Química Arena</span></a>
+  <a href="#parque" data-label="12 Parque São Jorge"><span class="sr-only">12 Parque São Jorge</span></a>
+  <a href="#fiel" data-label="13 A Fiel no centro da gestão"><span class="sr-only">13 A Fiel no centro da gestão</span></a>
+  <a href="#social" data-label="14 Responsabilidade social"><span class="sr-only">14 Responsabilidade social</span></a>
+  <a href="#compromisso" data-label="15 Compromisso com o futuro"><span class="sr-only">15 Compromisso com o futuro</span></a>
   <a href="#votar" data-label="Vote 05"><span class="sr-only">Vote 05</span></a>
 </nav>
 
 <main id="conteudo">
 
-<!-- HERO -->
-<section class="hero" id="inicio" aria-labelledby="titulo">
-  <div class="hero__glow" aria-hidden="true"></div>
-  <div class="wrap hero__grid">
+<!-- PÁGINA 01 · MANIFESTO (capa, conforme capa.png) -->
+<section class="hero" id="manifesto" aria-labelledby="t-01">
+  <div class="hero__escuro">
     <div class="hero__text">
-      <p class="hero__notice m-line"><span class="tag">Chapa 05</span> Plano de Governo 2027-2029</p>
-      <h1 id="titulo"><span class="m-line">Corinthians</span> <span class="m-line ouro">de Verdade</span></h1>
-      <p class="hero__lead m-line">O Corinthians precisa mudar seu modelo de gestão. Planejamento, responsabilidade e capacidade de execução para colocar a instituição acima de interesses individuais.</p>
+      <blockquote class="hero__frase m-line"><p>“Pelo corinthians eu faço tudo o que for preciso”</p></blockquote>
+      <img class="hero__logo m-line" src="assets/img/logos/logo-campanha.png" alt="Sergio Janikian Presidente" width="1510" height="1042">
+      <h1 id="t-01"><span class="m-line">Plano de</span> <span class="m-line">governo</span> <span class="m-line ouro">2027-2029</span></h1>
+      <p class="hero__lead m-line">O Corinthians precisa mudar seu modelo de gestão</p>
       <div class="btn-row m-line">
         <a class="btn btn--primary" id="cta-hero" href="_pdf/Janikian_Plano_de_Governo_2027_2029.pdf" download>Baixar o plano de governo <svg class="m-arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2v10M3.5 7.5 8 12l4.5-4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
         <a class="btn btn--secondary" href="#votar">Onde votar</a>
       </div>
-      <div class="countdown m-line" data-countdown>
-        <p class="countdown__label">Faltam para a eleição</p>
-        <div class="countdown__grid" aria-hidden="true">
-          <div><b data-cd="d">00</b><span>dias</span></div>
-          <div><b data-cd="h">00</b><span>horas</span></div>
-          <div><b data-cd="m">00</b><span>min</span></div>
-          <div><b data-cd="s">00</b><span>seg</span></div>
+      <div class="hero__foot m-line">
+        <img class="hero__cdv" src="assets/img/logos/logo-referencia-1.png" alt="Corinthians de Verdade, vote 05" width="304" height="160">
+        <div class="countdown" data-countdown>
+          <p class="countdown__label">Faltam para a eleição</p>
+          <div class="countdown__grid" aria-hidden="true">
+            <div><b data-cd="d">00</b><span>dias</span></div>
+            <div><b data-cd="h">00</b><span>horas</span></div>
+            <div><b data-cd="m">00</b><span>min</span></div>
+            <div><b data-cd="s">00</b><span>seg</span></div>
+          </div>
         </div>
       </div>
     </div>
-    <div class="hero__art m-settle" aria-hidden="true">
-      <span class="hero__num" data-depth="-16">05</span>
-      <img class="hero__retrato" data-depth="10" src="assets/img/fotos/sergio-janikian.webp" alt="" width="1080" height="1425" fetchpriority="high">
-    </div>
   </div>
-  <div class="marquee">
-    <p class="sr-only">Eleição em 28 de novembro, das 9h às 17h. Ginásio Wlamir Marques, Parque São Jorge.</p>
-    <div class="marquee__track" aria-hidden="true">
-      <span>Eleição em 28 de novembro, das 9h às 17h</span><i>✦</i><span>Ginásio Wlamir Marques, Parque São Jorge</span><i>✦</i><span>Vote 05</span><i>✦</i><span>Corinthians de Verdade</span><i>✦</i>
-      <span>Eleição em 28 de novembro, das 9h às 17h</span><i>✦</i><span>Ginásio Wlamir Marques, Parque São Jorge</span><i>✦</i><span>Vote 05</span><i>✦</i><span>Corinthians de Verdade</span><i>✦</i>
-    </div>
+  <div class="hero__foto m-settle" aria-hidden="true">
+    <img src="assets/img/fotos/sergio.png" alt="" width="675" height="899" fetchpriority="high">
   </div>
 </section>
 
-<!-- PILARES (PDF p.2) -->
-<section class="sec" id="pilares" aria-labelledby="t-pilares">
+<!-- PÁGINA 02 · OS PILARES DA GESTÃO + ÍNDICE -->
+<section class="sec sec--light pg" id="pilares" aria-labelledby="t-02">
+  <div class="wrap pg02">
+    <div class="pg02__main">
+      <p class="pnum">02</p>
+      <h2 id="t-02">Os pilares<br>da gestão</h2>
+      <ol class="pilares">
+        <li class="pilar"><span class="pilar__num">01</span><h3>Profissionalização da gestão</h3><p>Critérios técnicos para funções estratégicas, com metas, orçamento e avaliação de resultados.</p></li>
+        <li class="pilar"><span class="pilar__num">02</span><h3>Responsabilidade financeira</h3><p>Despesas controladas, dívidas reorganizadas e compromissos com cobertura orçamentária.</p></li>
+        <li class="pilar"><span class="pilar__num">03</span><h3>Integridade</h3><p>Prevenção de irregularidades, fiscalização independente, processos transparentes e apuração de denúncias.</p></li>
+        <li class="pilar"><span class="pilar__num">04</span><h3>Transparência</h3><p>Prestação de contas periódica, informações acessíveis e acompanhamento das decisões administrativas.</p></li>
+        <li class="pilar"><span class="pilar__num">05</span><h3>Autonomia técnica do futebol</h3><p>Menos interferência política nas decisões esportivas e fortalecimento das áreas profissionais.</p></li>
+        <li class="pilar"><span class="pilar__num">06</span><h3>Receitas recorrentes</h3><p>Novas propriedades comerciais, patrocínios, produtos e experiências para a torcida.</p></li>
+      </ol>
+    </div>
+    <nav class="indice" aria-labelledby="t-indice">
+      <h3 id="t-indice">Índice</h3>
+      <ol>
+        <li><a href="#manifesto"><b>01</b>Manifesto</a></li>
+        <li><a href="#pilares"><b>02</b>Pilares da gestão</a></li>
+        <li><a href="#cem-dias"><b>03</b>Primeiros 100 dias</a></li>
+        <li><a href="#financas"><b>04</b>Responsabilidade financeira</a></li>
+        <li><a href="#integridade"><b>05</b>Integridade</a></li>
+        <li><a href="#transparencia"><b>06</b>Gestão e transparência</a></li>
+        <li><a href="#futebol"><b>07</b>Futebol profissional</a></li>
+        <li><a href="#base"><b>08</b>Categorias de base</a></li>
+        <li><a href="#feminino"><b>09</b>Futebol feminino</a></li>
+        <li><a href="#marketing"><b>10</b>Marketing e comercial</a></li>
+        <li><a href="#arena"><b>11</b>Neo Química Arena</a></li>
+        <li><a href="#parque"><b>12</b>Parque São Jorge</a></li>
+        <li><a href="#fiel"><b>13</b>A Fiel no centro da gestão</a></li>
+        <li><a href="#social"><b>14</b>Responsabilidade social</a></li>
+        <li><a href="#compromisso"><b>15</b>Compromisso com o futuro</a></li>
+      </ol>
+    </nav>
+  </div>
+</section>
+
+<!-- PÁGINA 03 · OS PRIMEIROS 100 DIAS -->
+<section class="sec sec--dark pg" id="cem-dias" aria-labelledby="t-03">
   <div class="wrap">
-    <div class="head head--row">
-      <div>
-        <p class="kicker">01 · Base do plano</p>
-        <h2 id="t-pilares">Os pilares da gestão</h2>
+    <div class="pg03__top">
+      <div class="pg03__a">
+        <p class="pnum">03</p>
+        <p class="cem__os">Os primeiros</p>
+        <div class="cem__row">
+          <p class="cem__num" aria-hidden="true"><span data-count="100">100</span></p>
+          <p class="cem__dias">Dias</p>
+        </div>
       </div>
-      <p class="hint" aria-hidden="true">Passe o mouse para abrir cada pilar</p>
-    </div>
-    <ol class="pilares" data-expand>
-      <li class="pilar is-open" tabindex="0"><span class="pilar__num">01</span><h3>Profissionalização da gestão</h3><p>Critérios técnicos para funções estratégicas, com metas, orçamento e avaliação de resultados.</p></li>
-      <li class="pilar" tabindex="0"><span class="pilar__num">02</span><h3>Responsabilidade financeira</h3><p>Despesas controladas, dívidas reorganizadas e compromissos com cobertura orçamentária.</p></li>
-      <li class="pilar" tabindex="0"><span class="pilar__num">03</span><h3>Integridade</h3><p>Prevenção de irregularidades, fiscalização independente, processos transparentes e apuração de denúncias.</p></li>
-      <li class="pilar" tabindex="0"><span class="pilar__num">04</span><h3>Transparência</h3><p>Prestação de contas periódica, informações acessíveis e acompanhamento das decisões administrativas.</p></li>
-      <li class="pilar" tabindex="0"><span class="pilar__num">05</span><h3>Autonomia técnica do futebol</h3><p>Menos interferência política nas decisões esportivas e fortalecimento das áreas profissionais.</p></li>
-      <li class="pilar" tabindex="0"><span class="pilar__num">06</span><h3>Receitas recorrentes</h3><p>Novas propriedades comerciais, patrocínios, produtos e experiências para a torcida.</p></li>
-    </ol>
-  </div>
-</section>
-
-<!-- 100 DIAS (PDF p.3) -->
-<section class="sec sec--dark" id="cem-dias" aria-labelledby="t-cem">
-  <div class="wrap split">
-    <div class="split__a cem">
-      <p class="kicker">02 · Primeiros passos</p>
-      <p class="cem__num" aria-hidden="true"><span data-count="100">100</span></p>
-      <p class="cem__dias">Primeiros dias</p>
-      <h2 id="t-cem">Diagnóstico, organização e prioridades</h2>
-      <div class="entrega">
-        <h3>Entrega</h3>
-        <p>Diagnóstico documental com prioridades, informações passíveis de divulgação pública e encaminhamento aos órgãos competentes.</p>
+      <div class="pg03__b">
+        <h2 id="t-03"><span class="sr-only">Os primeiros 100 dias: </span>Diagnóstico, organização e prioridades</h2>
+        <img class="pg__assin" src="assets/img/logos/logo-referencia-2.png" alt="Sergio Janikian Presidente" width="464" height="114" loading="lazy">
       </div>
     </div>
-    <div class="split__b">
-      <ol class="trilha" data-trail>
-        <li><span class="trilha__dia">Dia 1</span>Levantamento completo das dívidas e obrigações financeiras.</li>
+    <ol class="trilha trilha--h" data-trail>
+        <li>Levantamento completo das dívidas e obrigações financeiras.</li>
         <li>Revisão de contratos, receitas e despesas.</li>
         <li>Análise dos projetos e investimentos em andamento.</li>
         <li>Diagnóstico das áreas de futebol, finanças, comercial e comunicação.</li>
         <li>Identificação de riscos administrativos e financeiros.</li>
         <li>Estudo de estrutura independente de integridade e prevenção à corrupção.</li>
-        <li><span class="trilha__dia">Dia 100</span>Reorganização das responsabilidades dos departamentos.</li>
-      </ol>
+        <li>Reorganização das responsabilidades dos departamentos.</li>
+    </ol>
+    <div class="entrega">
+      <h3>Entrega</h3>
+      <p>Diagnóstico documental com prioridades, informações passíveis de divulgação pública e encaminhamento aos órgãos competentes.</p>
     </div>
   </div>
 </section>
 
-<!-- LRFC (PDF p.4) -->
-<section class="sec" id="financas" aria-labelledby="t-lrfc">
-  <div class="wrap split">
-    <div class="split__a">
-      <p class="kicker">03 · Finanças</p>
-      <h2 id="t-lrfc">Responsabilidade financeira</h2>
-      <p class="lead"><strong class="rotulo">Lei de Responsabilidade Financeira do Corinthians (LRFC).</strong> Regras internas para estabelecer limites de despesas e controle orçamentário.</p>
-      <ul class="lista">
+<!-- PÁGINA 04 · RESPONSABILIDADE FINANCEIRA -->
+<section class="sec sec--light pg" id="financas" aria-labelledby="t-04">
+  <div class="wrap">
+    <div class="pg04__top">
+      <div class="pg04__a">
+        <p class="pnum">04</p>
+        <h2 id="t-04">Responsabilidade financeira</h2>
+        <h3 class="sub-ouro">Lei de Responsabilidade Financeira do Corinthians (LRFC)</h3>
+        <p class="lead">Regras internas para estabelecer limites de despesas e controle orçamentário.</p>
+      </div>
+      <div class="pg04__b">
+        <ul class="lista">
         <li>Orçamento plurianual e limites de despesas por departamento.</li>
         <li>Fonte de receita correspondente para gastos e investimentos não previstos.</li>
+        <li>Responsabilização dos dirigentes por despesas autorizadas em desacordo com as regras aprovadas.</li>
         <li>Revisão de contratos e renegociação das dívidas, considerando custos, prazos e garantias.</li>
       </ul>
-      <div class="regra">
-        <h3>Responsabilização dos dirigentes</h3>
-        <p>Por despesas autorizadas em desacordo com as regras aprovadas. Investimentos compatíveis com a capacidade financeira do clube.</p>
+        <p class="nota">Investimentos compatíveis com a capacidade financeira do clube.</p>
       </div>
     </div>
-    <div class="split__b">
-      <div class="tetos" role="list" aria-label="Limites de despesa sobre as receitas" data-bars>
-        <img class="tetos__selo" src="assets/img/logos/logo-referencia-3.png" alt="" width="200" height="201" loading="lazy">
+    <div class="tetos" role="list" aria-label="Limites sobre as receitas" data-bars>
+        <img class="tetos__logo" src="assets/img/logos/logo-referencia-2.png" alt="Sergio Janikian Presidente" width="464" height="114" loading="lazy">
         <div class="teto" role="listitem">
           <strong>Até <span data-count="50" data-suffix="%">50%</span></strong>
           <span>Custo total do futebol profissional sobre as receitas recorrentes.</span>
@@ -182,237 +208,292 @@
           <strong>Até <span data-count="5" data-suffix="%">5%</span></strong>
           <span>Clube social e esportes amadores, considerando o resultado líquido e as receitas próprias.</span>
           <div class="barra" aria-hidden="true"><i style="--v:.05"></i></div>
-          <div class="barra-escala" aria-hidden="true"><span>0%</span><span>100% da receita</span></div>
         </div>
-      </div>
-    </div>
   </div>
 </section>
 
-<!-- INTEGRIDADE + ÀS CLARAS (PDF p.5, 6) -->
-<section class="sec sec--alt" id="gestao" aria-labelledby="t-claras">
+<!-- PÁGINA 05 · INTEGRIDADE E COMBATE À CORRUPÇÃO -->
+<section class="sec sec--light pg" id="integridade" aria-labelledby="t-05">
+  <div class="wrap pg05">
+    <div class="pg05__a">
+      <p class="pnum">05</p>
+      <h2 id="t-05">Integridade e<br>combate à corrupção</h2>
+      <p class="lead">Estudar uma estrutura independente de integridade e prevenção à corrupção, com competências próprias e fiscalização efetiva.</p>
+      <img class="pg05__selo" src="assets/img/logos/logo-referencia-3.png" alt="" width="200" height="201" loading="lazy">
+    </div>
+    <ul class="linhas pg05__b">
+        <li>Prevenção de irregularidades e conflitos de interesses.</li>
+        <li>Fortalecimento dos controles internos.</li>
+        <li>Procedimentos documentados para contratações e pagamentos.</li>
+        <li>Apuração independente de denúncias e suspeitas.</li>
+        <li>Processos competitivos e critérios objetivos para escolher fornecedores.</li>
+        <li>Registro das decisões administrativas e de seus responsáveis.</li>
+        <li>Respeito ao devido processo e ao direito de defesa.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- PÁGINA 06 · GESTÃO PROFISSIONAL E TRANSPARÊNCIA -->
+<section class="sec sec--light pg" id="transparencia" aria-labelledby="t-06">
   <div class="wrap">
-    <div class="head head--row">
+    <div class="pg-head">
       <div>
-        <p class="kicker">04 · Gestão</p>
-        <h2 id="t-claras">O Corinthians às claras</h2>
+        <p class="pnum">06 / Gestão profissional e transparência</p>
+        <h2 id="t-06">O Corinthians<br>às claras</h2>
       </div>
-      <p class="lead">Gestão profissional e transparência.</p>
+      <img class="pg-head__logo" src="assets/img/logos/logo-referencia-2.png" alt="Sergio Janikian Presidente" width="464" height="114" loading="lazy">
     </div>
-    <div class="tabs" data-tabs>
-      <div class="tabs__list" role="tablist" aria-label="Gestão profissional e transparência">
-        <button type="button" role="tab" id="tab-int" aria-controls="p-int" aria-selected="true"><span>01</span>Integridade</button>
-        <button type="button" role="tab" id="tab-prof" aria-controls="p-prof" aria-selected="false"><span>02</span>Profissionalização</button>
-        <button type="button" role="tab" id="tab-transp" aria-controls="p-transp" aria-selected="false"><span>03</span>Transparência</button>
-        <button type="button" role="tab" id="tab-com" aria-controls="p-com" aria-selected="false"><span>04</span>Comunicação</button>
+    <div class="cols3">
+      <div class="col">
+        <h3>Profissionalização</h3>
+        <ul class="lista">
+          <li>Funções estratégicas remuneradas preenchidas por critérios técnicos.</li>
+          <li>Metas e indicadores por departamento.</li>
+          <li>Responsabilidade por orçamento e prazos.</li>
+          <li>Plano de Continuidade Administrativa para preservar projetos estratégicos.</li>
+        </ul>
       </div>
-      <div class="tabs__panel" role="tabpanel" id="p-int" aria-labelledby="tab-int">
-        <div class="painel">
-          <div class="painel__a">
-            <h3 class="painel__titulo">Integridade e combate à corrupção</h3>
-            <p>Estudar uma estrutura independente de integridade e prevenção à corrupção, com competências próprias e fiscalização efetiva.</p>
-          </div>
-          <ul class="lista lista--2 painel__b">
-            <li>Prevenção de irregularidades e conflitos de interesses.</li>
-            <li>Apuração independente de denúncias e suspeitas.</li>
-            <li>Fortalecimento dos controles internos.</li>
-            <li>Processos competitivos e critérios objetivos para escolher fornecedores.</li>
-            <li>Procedimentos documentados para contratações e pagamentos.</li>
-            <li>Registro das decisões administrativas e de seus responsáveis.</li>
-            <li>Respeito ao devido processo e ao direito de defesa.</li>
-          </ul>
-        </div>
+      <div class="col">
+        <h3>Transparência</h3>
+        <ul class="lista">
+          <li>Implantar o programa e criar o Portal de Transparência da Fiel.</li>
+          <li>Divulgação periódica de receitas, despesas, dívidas e folha salarial.</li>
+          <li>Prestação de contas da execução orçamentária.</li>
+          <li>Informações aos órgãos de fiscalização.</li>
+        </ul>
       </div>
-      <div class="tabs__panel" role="tabpanel" id="p-prof" aria-labelledby="tab-prof">
-        <div class="painel">
-          <div class="painel__a"><h3 class="painel__titulo">Profissionalização</h3></div>
-          <ul class="lista lista--2 painel__b">
-            <li>Funções estratégicas remuneradas preenchidas por critérios técnicos.</li>
-            <li>Metas e indicadores por departamento.</li>
-            <li>Responsabilidade por orçamento e prazos.</li>
-            <li>Plano de Continuidade Administrativa para preservar projetos estratégicos.</li>
-          </ul>
-        </div>
-      </div>
-      <div class="tabs__panel" role="tabpanel" id="p-transp" aria-labelledby="tab-transp">
-        <div class="painel">
-          <div class="painel__a"><h3 class="painel__titulo">Transparência</h3></div>
-          <ul class="lista lista--2 painel__b">
-            <li>Implantar o programa e criar o Portal de Transparência da Fiel.</li>
-            <li>Divulgação periódica de receitas, despesas, dívidas e folha salarial.</li>
-            <li>Prestação de contas da execução orçamentária.</li>
-            <li>Informações aos órgãos de fiscalização.</li>
-          </ul>
-        </div>
-      </div>
-      <div class="tabs__panel" role="tabpanel" id="p-com" aria-labelledby="tab-com">
-        <div class="painel">
-          <div class="painel__a"><h3 class="painel__titulo">Comunicação</h3></div>
-          <ul class="lista lista--2 painel__b">
-            <li>Reformular a Corinthians TV com programação própria de entrevistas, documentários, bastidores e conteúdos históricos.</li>
-            <li>Ampliar a abertura dos treinamentos e das entrevistas no CT.</li>
-            <li>Zona mista fixa na Neo Química Arena, respeitadas as regras das competições.</li>
-          </ul>
-        </div>
+      <div class="col">
+        <h3>Comunicação</h3>
+        <ul class="lista">
+          <li>Reformular a Corinthians TV com programação própria de entrevistas, documentários, bastidores e conteúdos históricos.</li>
+          <li>Ampliar a abertura dos treinamentos e das entrevistas no CT.</li>
+          <li>Zona mista fixa na Neo Química Arena, respeitadas as regras das competições.</li>
+        </ul>
       </div>
     </div>
   </div>
 </section>
 
-<!-- FUTEBOL: capítulos (PDF p.7, 8, 9) -->
-<section class="sec sec--dark" id="futebol" aria-labelledby="t-fut">
+<!-- PÁGINA 07 · FUTEBOL PROFISSIONAL -->
+<section class="sec sec--light pg" id="futebol" aria-labelledby="t-07">
+  <div class="wrap pg07">
+    <div class="pg07__a">
+      <p class="pnum">07</p>
+      <h2 id="t-07">Futebol<br>profissional</h2>
+      <p class="tagline">Autonomia técnica e competitividade</p>
+      <p class="lead">Menor interferência política nas decisões esportivas, com controles financeiros e institucionais.</p>
+      <div class="pg07__listas">
+        <ul class="lista">
+        <li>Gestão com estrutura técnica e administrativa.</li>
+        <li>Critérios técnicos e financeiros para contratações e renovações.</li>
+        <li>Scouting e monitoramento de atletas, com tecnologia e dados na identificação de jogadores.</li>
+      </ul>
+        <ul class="lista">
+        <li>Modernização da saúde, preparação física e performance.</li>
+        <li>Prevenção de lesões e acompanhamento psicológico.</li>
+        <li>Planejamento do elenco pelo custo integral das operações.</li>
+      </ul>
+      </div>
+    </div>
+    <figure class="pg07__foto foto"><img src="assets/img/fotos/ct.webp" alt="Portão do CT Dr. Joaquim Grava, com o escudo do Corinthians" loading="lazy" width="1360" height="1015"></figure>
+  </div>
+</section>
+
+<!-- PÁGINA 08 · CATEGORIAS DE BASE -->
+<section class="sec sec--light pg pg--band" id="base" aria-labelledby="t-08">
+  <div class="band">
+    <div class="wrap band__grid">
+      <div class="band__text">
+        <p class="pnum">08 / Categorias de base</p>
+        <h2 id="t-08">Fábrica<br>de craques</h2>
+        <p class="tagline">Formar, revelar e valorizar</p>
+        <p>Fonte de atletas para o profissional e de valorização do patrimônio esportivo.</p>
+      </div>
+    </div>
+    <div class="band__foto"><img src="assets/img/fotos/base-sub17.webp" alt="Elenco sub-17 do Corinthians comemorando o título do Brasileirão Sub-17" loading="lazy" width="1600" height="1039"></div>
+  </div>
   <div class="wrap">
-    <div class="head head--row">
-      <div>
-        <p class="kicker">05 · Futebol</p>
-        <h2 id="t-fut">Futebol</h2>
-      </div>
-      <p class="lead">Fortalecer o futebol profissional, a base e o futebol feminino.</p>
+    <div class="cols2 cols2--top">
+      <ul class="lista">
+        <li>Metodologia integrada ao futebol profissional.</li>
+        <li>Modernização de alojamentos, campos e estruturas médicas.</li>
+        <li>Captação e observação de talentos fortalecidas, com dados aplicados à formação.</li>
+      </ul>
+      <ul class="lista">
+        <li>Acompanhamento nutricional, psicológico e físico.</li>
+        <li>Proximidade com as famílias e acompanhamento escolar.</li>
+        <li>Preservação da participação do clube nos direitos econômicos dos atletas.</li>
+      </ul>
     </div>
-    <div class="caps" data-chapters>
-      <div class="caps__nav" role="tablist" aria-label="Futebol">
-        <button type="button" role="tab" id="cap-1" aria-controls="cp-1" aria-selected="true"><span class="caps__n">01</span><span class="caps__t">Futebol profissional<small>Autonomia técnica e competitividade</small></span><i class="caps__bar" aria-hidden="true"></i></button>
-        <button type="button" role="tab" id="cap-2" aria-controls="cp-2" aria-selected="false"><span class="caps__n">02</span><span class="caps__t">Fábrica de craques<small>Formar, revelar e valorizar</small></span><i class="caps__bar" aria-hidden="true"></i></button>
-        <button type="button" role="tab" id="cap-3" aria-controls="cp-3" aria-selected="false"><span class="caps__n">03</span><span class="caps__t">As Brabas<small>Autonomia e estrutura</small></span><i class="caps__bar" aria-hidden="true"></i></button>
-      </div>
-      <div class="caps__fotos">
-        <img class="is-on" data-for="cp-1" src="assets/img/fotos/ct.webp" alt="Portão do CT Dr. Joaquim Grava, com o escudo do Corinthians" width="1360" height="1015" loading="lazy">
-        <img data-for="cp-2" src="assets/img/fotos/base-sub17.webp" alt="Elenco sub-17 do Corinthians comemorando o título do Brasileirão Sub-17" width="1600" height="1039" loading="lazy">
-        <img data-for="cp-3" src="assets/img/fotos/brabas.webp" alt="Jogadoras do Corinthians erguendo a taça" width="1155" height="1157" loading="lazy" style="object-position:50% 30%">
-      </div>
-      <div class="caps__paineis">
-        <div class="caps__panel" role="tabpanel" id="cp-1" aria-labelledby="cap-1">
-          <h3>Futebol profissional</h3>
-          <p>Menor interferência política nas decisões esportivas, com controles financeiros e institucionais.</p>
-          <ul class="lista">
-            <li>Critérios técnicos e financeiros para contratações e renovações.</li>
-            <li>Scouting e monitoramento de atletas, com tecnologia e dados na identificação de jogadores.</li>
-            <li>Modernização da saúde, preparação física e performance.</li>
-            <li>Planejamento do elenco pelo custo integral das operações.</li>
-          </ul>
-        </div>
-        <div class="caps__panel" role="tabpanel" id="cp-2" aria-labelledby="cap-2">
-          <h3>Fábrica de craques</h3>
-          <p>Fonte de atletas para o profissional e de valorização do patrimônio esportivo.</p>
-          <ul class="lista">
-            <li>Metodologia integrada ao futebol profissional.</li>
-            <li>Modernização de alojamentos, campos e estruturas médicas.</li>
-            <li>Acompanhamento nutricional, psicológico e físico.</li>
-            <li>Proximidade com as famílias e acompanhamento escolar.</li>
-          </ul>
-          <div class="meta"><strong>Top <span data-count="3">3</span></strong><span>Meta: entre os 3 clubes brasileiros que mais arrecadam com transferências de atletas formados em casa.</span></div>
-        </div>
-        <div class="caps__panel" role="tabpanel" id="cp-3" aria-labelledby="cap-3">
-          <h3>As Brabas</h3>
-          <p>Planejamento e acompanhamento próprios para manter o protagonismo esportivo e ampliar a sustentabilidade da modalidade.</p>
-          <ul class="lista">
-            <li>Atuação comercial exclusiva, com profissional responsável por patrocínios, parceiros e metas específicas.</li>
-            <li>Fortalecimento das categorias de base femininas.</li>
-            <li>Fazendinha como casa oficial, com reformas e adequações para competições.</li>
-            <li>Suporte nutricional, psicológico e familiar às atletas.</li>
-            <li>Salários e premiações pagos em dia.</li>
-          </ul>
-          <div class="meta"><strong><span data-count="100" data-suffix="%">100%</span></strong><span>das receitas geradas reinvestidas na própria modalidade.</span></div>
-        </div>
-      </div>
+    <div class="meta">
+      <div><p class="meta__rot">Meta</p><strong>Entre os <span data-count="3">3</span></strong></div>
+      <p>clubes brasileiros que mais arrecadam com transferências de atletas formados em casa.</p>
     </div>
   </div>
 </section>
 
-<!-- ARENA + MARKETING (PDF p.10, 11) -->
-<section class="sec" id="arena" aria-labelledby="t-mkt">
-  <div class="wrap mkt">
-    <div class="mkt__foto" data-develop>
-      <img src="assets/img/fotos/arena.webp" alt="Vista aérea da Neo Química Arena" loading="lazy" width="1600" height="1068">
-      <div class="mkt__caixa">
-        <h3 class="mkt__arena">Neo Química Arena</h3>
+<!-- PÁGINA 09 · FUTEBOL FEMININO -->
+<section class="sec sec--light pg" id="feminino" aria-labelledby="t-09">
+  <div class="wrap split">
+    <div class="split__a">
+      <p class="pnum">09 / Futebol feminino</p>
+      <h2 id="t-09">As Brabas</h2>
+      <figure class="foto foto--quadrada"><img src="assets/img/fotos/brabas.webp" alt="Jogadoras do Corinthians erguendo a taça" loading="lazy" width="1155" height="1157"></figure>
+      <div class="stat">
+        <strong><span data-count="100" data-suffix="%">100%</span></strong>
+        <p>das receitas geradas reinvestidas na própria modalidade</p>
+      </div>
+    </div>
+    <div class="split__b pg09__b">
+      <h3 class="h3-grande">Autonomia<br>e estrutura</h3>
+      <p class="lead">Planejamento e acompanhamento próprios para manter o protagonismo esportivo e ampliar a sustentabilidade da modalidade.</p>
+      <ul class="lista">
+        <li>Atuação comercial exclusiva, com profissional responsável por patrocínios, parceiros e metas específicas.</li>
+        <li>Fortalecimento das categorias de base femininas.</li>
+        <li>Fazendinha como casa oficial, com reformas e adequações para competições.</li>
+        <li>Novos patrocinadores para financiar melhorias estruturais.</li>
+        <li>Suporte nutricional, psicológico e familiar às atletas.</li>
+        <li>Salários e premiações pagos em dia.</li>
+        <li>Comunicação clara entre administração e elenco.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- PÁGINA 10 · MARKETING E DESENVOLVIMENTO COMERCIAL -->
+<section class="sec sec--dark pg" id="marketing" aria-labelledby="t-10">
+  <div class="wrap pg10">
+    <div class="pg10__a">
+      <p class="pnum">10</p>
+      <h2 id="t-10">Marketing e<br>desenvolvimento<br>comercial</h2>
+      <p class="tagline tagline--grande">A força da marca Corinthians como fonte de receitas recorrentes.</p>
+    </div>
+    <div class="pg10__b">
+      <ul class="tiles">
+        <li>Fortalecer a estrutura comercial e a prospecção de negócios.</li>
+        <li>Criar propriedades de patrocínio e valorizar os espaços da camisa.</li>
+        <li>Ampliar parcerias e produtos licenciados.</li>
+        <li>Novo processo competitivo para a gestão das lojas oficiais.</li>
+      </ul>
+      <ul class="tiles">
+        <li>Expandir a presença comercial para outros estados e desenvolver produtos e experiências para quem vive fora do Brasil.</li>
+        <li>Internacionalizar a comunicação nas redes sociais.</li>
+        <li>Integrar marketing, comunicação e comercial na valorização da marca.</li>
+        <li>Desenvolver patrocínios e comercialização para a Corinthians TV.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- PÁGINA 11 · NEO QUÍMICA ARENA -->
+<section class="sec sec--light pg pg--band" id="arena" aria-labelledby="t-11">
+  <div class="band">
+    <div class="wrap band__grid">
+      <div class="band__text">
+        <p class="pnum">11</p>
+        <h2 id="t-11">Neo Química<br>Arena</h2>
         <p>Gestão especializada e revisão de contratos para uma operação esportiva e comercial durante todo o ano.</p>
       </div>
     </div>
-    <div class="mkt__texto">
-      <p class="kicker">06 · Receitas</p>
-      <h2 id="t-mkt">Marketing e comercial</h2>
-      <p class="lead lead--ouro">A força da marca Corinthians como fonte de receitas recorrentes.</p>
-      <div class="tabs tabs--sm" data-tabs>
-        <div class="tabs__list" role="tablist" aria-label="Marketing e comercial">
-          <button type="button" role="tab" id="tab-ano" aria-controls="p-ano" aria-selected="true">Arena o ano todo</button>
-          <button type="button" role="tab" id="tab-marca" aria-controls="p-marca" aria-selected="false">Marca e patrocínio</button>
-        </div>
-        <div class="tabs__panel" role="tabpanel" id="p-ano" aria-labelledby="tab-ano">
-          <ul class="lista">
-            <li>Calendário de shows, eventos corporativos e feiras.</li>
-            <li>Modernização e exploração comercial do estacionamento.</li>
-            <li>Experiências premium e serviços de hospitalidade.</li>
-            <li>Maior participação do Corinthians nas receitas de produtos e serviços.</li>
-            <li>Circuito histórico e turístico, visitas guiadas e experiências ligadas à história do clube.</li>
-            <li>Demonstrativo próprio de receitas e despesas da operação.</li>
-          </ul>
-        </div>
-        <div class="tabs__panel" role="tabpanel" id="p-marca" aria-labelledby="tab-marca">
-          <ul class="lista">
-            <li>Criar propriedades de patrocínio e valorizar os espaços da camisa.</li>
-            <li>Ampliar parcerias e produtos licenciados.</li>
-            <li>Novo processo competitivo para a gestão das lojas oficiais.</li>
-            <li>Expandir a presença comercial para outros estados e desenvolver produtos e experiências para quem vive fora do Brasil.</li>
-            <li>Internacionalizar a comunicação nas redes sociais.</li>
-            <li>Desenvolver patrocínios e comercialização para a Corinthians TV.</li>
-          </ul>
-        </div>
-      </div>
-      <p class="nota">Ampliar o uso e as receitas com eficiência operacional, preservando o calendário esportivo.</p>
-    </div>
+    <div class="band__foto" data-develop><img src="assets/img/fotos/arena.webp" alt="Vista aérea da Neo Química Arena" loading="lazy" width="1600" height="1068"></div>
   </div>
-</section>
-
-<!-- A FIEL + PARQUE SÃO JORGE (PDF p.12, 13) -->
-<section class="sec sec--alt" id="fiel" aria-labelledby="t-fiel">
-  <div class="wrap fiel">
-    <div class="fiel__a">
-      <p class="kicker">07 · Torcida e associados</p>
-      <h2 id="t-fiel">A Fiel no centro da gestão</h2>
-      <p class="lead">Relacionamento com associados e torcedores como parte estratégica da administração.</p>
-      <ul class="linhas">
-        <li>Plataforma digital integrada: ingressos, Fiel Torcedor e serviços do clube social.</li>
-        <li>Reestruturar o Fiel Torcedor por processo competitivo para escolher operador especializado.</li>
-        <li>Criar o Plano Internacional para quem vive fora do Brasil.</li>
-        <li>Desenvolver o Fiel no Avião, condicionado à disponibilidade e à viabilidade operacional.</li>
-        <li>Atendimento e ouvidoria permanentes, com prazos de resposta aos associados.</li>
-        <li>Mais participação dos associados nas decisões sobre o Parque São Jorge.</li>
-        <li>Diálogo institucional com torcidas organizadas.</li>
-        <li>Uso de dados para aprimorar serviços e conhecer os públicos, respeitando a LGPD.</li>
+  <div class="wrap">
+    <div class="cols2 cols2--top">
+      <ul class="lista">
+        <li>Calendário de shows, eventos corporativos e feiras.</li>
+        <li>Modernização e exploração comercial do estacionamento.</li>
+        <li>Experiências premium e serviços de hospitalidade.</li>
+        <li>Maior participação do Corinthians nas receitas de produtos e serviços.</li>
+      </ul>
+      <ul class="lista">
+        <li>Circuito histórico e turístico, visitas guiadas e experiências ligadas à história do clube.</li>
+        <li>Integração com iniciativas culturais e turísticas da Zona Leste.</li>
+        <li>Demonstrativo próprio de receitas e despesas da operação.</li>
       </ul>
     </div>
-    <article class="psj" aria-labelledby="t-psj">
-      <div class="psj__foto"><img src="assets/img/fotos/parque-sao-jorge.webp" alt="Portão de entrada do Parque São Jorge" loading="lazy" width="1495" height="1122"></div>
-      <div class="psj__corpo">
-        <h3 id="t-psj">Parque São Jorge e esportes amadores</h3>
-        <p>Planejamento, orçamento e responsabilidades próprios para valorizar o patrimônio histórico, social e esportivo.</p>
-        <ul class="lista">
-          <li>Receitas e despesas do clube social com visibilidade específica.</li>
-          <li>Gestão profissional dos esportes amadores, com responsáveis, orçamentos e calendários por modalidade.</li>
-          <li>Recursos por leis de incentivo, CBC e patrocínios.</li>
-          <li>Modernizar piscinas, quadras, campos e demais estruturas, com melhorias em vestiários, banheiros, estacionamento e acessibilidade.</li>
-          <li>Escolinhas, atividades familiares e colônias de férias.</li>
-          <li>Projetos de esporte social e paradesporto.</li>
-        </ul>
-      </div>
-    </article>
+    <p class="nota">Ampliar o uso e as receitas com eficiência operacional, preservando o calendário esportivo.</p>
   </div>
 </section>
 
-<!-- SOCIAL (PDF p.14) -->
-<section class="sec" id="social" aria-labelledby="t-social">
-  <div class="wrap">
-    <div class="head head--row">
-      <div>
-        <p class="kicker">08 · Sociedade</p>
-        <h2 id="t-social">Responsabilidade social e futuro</h2>
+<!-- PÁGINA 12 · PARQUE SÃO JORGE E ESPORTES AMADORES -->
+<section class="sec sec--light pg pg--band pg--band-rev" id="parque" aria-labelledby="t-12">
+  <div class="band">
+    <div class="wrap band__grid">
+      <div class="band__text">
+        <p class="pnum">12</p>
+        <h2 id="t-12">Parque São Jorge<br>e esportes amadores</h2>
+        <p>Planejamento, orçamento e responsabilidades próprios para valorizar o patrimônio histórico, social e esportivo.</p>
       </div>
-      <p class="lead">Um Corinthians comprometido com a sociedade. Projetos contínuos, parcerias e inclusão para fortalecer a função social do clube.</p>
     </div>
-    <div class="cards3">
-      <div class="card">
-        <span class="card__n" aria-hidden="true">01</span>
+    <div class="band__foto"><img src="assets/img/fotos/parque-sao-jorge.webp" alt="Portão de entrada do Parque São Jorge" loading="lazy" width="1495" height="1122"></div>
+  </div>
+  <div class="wrap">
+    <div class="cols2 cols2--top">
+      <ul class="lista">
+        <li>Receitas e despesas do clube social com visibilidade específica.</li>
+        <li>Gestão profissional dos esportes amadores, com responsáveis, orçamentos e calendários por modalidade.</li>
+        <li>Recursos por leis de incentivo, CBC e patrocínios.</li>
+      </ul>
+      <ul class="lista">
+        <li>Modernizar piscinas, quadras, campos e demais estruturas, com melhorias em vestiários, banheiros, estacionamento e acessibilidade.</li>
+        <li>Eventos, torneios e atividades culturais.</li>
+        <li>Escolinhas, atividades familiares e colônias de férias.</li>
+        <li>Projetos de esporte social e paradesporto.</li>
+      </ul>
+    </div>
+    <p class="nota">Valorizar os associados e ampliar a sustentabilidade das modalidades esportivas.</p>
+  </div>
+</section>
+
+<!-- PÁGINA 13 · A FIEL NO CENTRO DA GESTÃO -->
+<section class="sec sec--light pg pg13" id="fiel" aria-labelledby="t-13">
+  <div class="wrap pg13__grid">
+    <aside class="pg13__a">
+      <h2 id="t-13">A Fiel<br>no centro<br>da gestão</h2>
+      <div class="pg13__plataforma">
+        <h3>Plataforma<br>digital integrada</h3>
+        <ul>
+          <li>Ingressos</li>
+          <li>Fiel Torcedor</li>
+          <li>Serviços do clube social</li>
+        </ul>
+      </div>
+      <img class="pg__assin" src="assets/img/logos/logo-referencia-2.png" alt="Sergio Janikian Presidente" width="464" height="114" loading="lazy">
+    </aside>
+    <div class="pg13__b">
+      <p class="pnum">13</p>
+      <h3 class="h3-grande">Transformação<br>digital e participação</h3>
+      <p class="lead">Relacionamento com associados e torcedores como parte estratégica da administração.</p>
+      <div class="cols2 cols2--top">
+        <ul class="lista">
+          <li>Reestruturar o Fiel Torcedor por processo competitivo para escolher operador especializado.</li>
+          <li>Criar o Plano Internacional para quem vive fora do Brasil.</li>
+          <li>Desenvolver o Fiel no Avião, condicionado à disponibilidade e à viabilidade operacional.</li>
+        </ul>
+        <ul class="lista">
+          <li>Atendimento e ouvidoria permanentes, com prazos de resposta aos associados.</li>
+          <li>Mais participação dos associados nas decisões sobre o Parque São Jorge.</li>
+          <li>Diálogo institucional com torcidas organizadas.</li>
+          <li>Uso de dados para aprimorar serviços e conhecer os públicos, respeitando a LGPD.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PÁGINA 14 · RESPONSABILIDADE SOCIAL E FUTURO -->
+<section class="sec sec--light pg" id="social" aria-labelledby="t-14">
+  <div class="wrap">
+    <div class="pg-head">
+      <div>
+        <p class="pnum">14</p>
+        <h2 id="t-14">Responsabilidade<br>social e futuro</h2>
+      </div>
+      <p class="tagline tagline--grande">Um Corinthians comprometido com a sociedade</p>
+    </div>
+    <p class="lead">Projetos contínuos, parcerias e inclusão para fortalecer a função social do clube.</p>
+    <div class="cols3">
+      <div class="col">
         <h3>Ação social</h3>
         <ul class="lista">
           <li>Manter e ampliar Sangue Corinthiano e Outubro Rosa.</li>
@@ -422,8 +503,7 @@
           <li>Voluntariado com associados e torcedores.</li>
         </ul>
       </div>
-      <div class="card">
-        <span class="card__n" aria-hidden="true">02</span>
+      <div class="col">
         <h3>Inclusão e respeito</h3>
         <ul class="lista">
           <li>Inclusão e acessibilidade.</li>
@@ -431,8 +511,7 @@
           <li>Canais de denúncia e apuração de discriminação.</li>
         </ul>
       </div>
-      <div class="card">
-        <span class="card__n" aria-hidden="true">03</span>
+      <div class="col">
         <h3>Meio ambiente</h3>
         <ul class="lista">
           <li>Coleta seletiva e destinação correta de resíduos.</li>
@@ -444,37 +523,37 @@
   </div>
 </section>
 
-<!-- COMPROMISSOS + MANIFESTO (PDF p.15) -->
-<section class="sec sec--dark" id="compromissos" aria-labelledby="t-comp">
+<!-- PÁGINA 15 · COMPROMISSO COM O FUTURO -->
+<section class="sec sec--dark pg" id="compromisso" aria-labelledby="t-15">
   <div class="wrap split">
-    <div class="split__a comp">
-      <p class="kicker">09 · Compromisso</p>
-      <h2 id="t-comp">Compromisso com o futuro</h2>
-      <p class="lead">Um Corinthians de Verdade.</p>
-      <p class="comp__big" aria-hidden="true" data-comp-big>01</p>
+    <div class="split__a pg15__a">
+      <img class="pg15__logo" src="assets/img/logos/logo-principal.png" alt="Sergio Janikian Presidente" width="2033" height="444" loading="lazy">
+      <p class="pg15__titulo">Um Corinthians<br>de Verdade</p>
+      <p class="lead">Planejamento, responsabilidade e capacidade de execução para colocar a instituição acima de interesses individuais.</p>
+      <img class="pg15__cdv" src="assets/img/logos/logo-referencia-1.png" alt="Corinthians de Verdade, vote 05" width="304" height="160" loading="lazy">
     </div>
-    <ol class="compromissos split__b" data-comp>
-      <li class="is-on" tabindex="0">Recuperar a organização financeira e estabelecer regras permanentes de responsabilidade orçamentária.</li>
-      <li tabindex="0">Implantar mecanismos de integridade, fiscalização e combate à corrupção.</li>
-      <li tabindex="0">Fortalecer o futebol profissional, a base e o futebol feminino.</li>
-      <li tabindex="0">Ampliar receitas e valorizar os ativos comerciais do Corinthians.</li>
-      <li tabindex="0">Construir uma gestão transparente, profissional e comprometida com a Fiel.</li>
-    </ol>
-  </div>
-  <div class="wrap manifesto">
-    <p class="manifesto__frase" data-words>Decisões responsáveis, respeito à história do clube e compromisso com as próximas gerações.</p>
-    <img class="manifesto__logo" src="assets/img/logos/logo-referencia-1.png" alt="Corinthians de Verdade, vote 05" width="304" height="160" loading="lazy">
+    <div class="split__b">
+      <h2 id="t-15" class="ouro">Compromisso<br>com o futuro</h2>
+      <ol class="compromissos" data-comp>
+        <li tabindex="0">Recuperar a organização financeira e estabelecer regras permanentes de responsabilidade orçamentária.</li>
+        <li tabindex="0">Implantar mecanismos de integridade, fiscalização e combate à corrupção.</li>
+        <li tabindex="0">Fortalecer o futebol profissional, a base e o futebol feminino.</li>
+        <li tabindex="0">Ampliar receitas e valorizar os ativos comerciais do Corinthians.</li>
+        <li tabindex="0">Construir uma gestão transparente, profissional e comprometida com a Fiel.</li>
+      </ol>
+      <p class="manifesto__frase" data-words>Decisões responsáveis, respeito à história do clube e compromisso com as próximas gerações.</p>
+    </div>
   </div>
 </section>
 
 </main>
 
-<!-- FECHAMENTO + RODAPÉ -->
+<!-- VOTE 05 · informações da eleição + rodapé -->
 <footer class="closing" id="votar" aria-labelledby="t-votar">
   <div class="wrap">
     <div class="close">
       <div class="close__a">
-        <p class="close__num" aria-hidden="true">05</p>
+        <p class="close__num" aria-hidden="true"><span class="num-vote">Vote</span>05</p>
         <div class="countdown countdown--dark" data-countdown aria-hidden="true">
           <p class="countdown__label">Faltam</p>
           <div class="countdown__grid">
@@ -509,9 +588,9 @@
         <a href="#cem-dias">100 dias</a>
         <a href="#financas">Finanças</a>
         <a href="#futebol">Futebol</a>
-        <a href="#compromissos">Compromissos</a>
+        <a href="#compromisso">Compromisso</a>
       </nav>
-      <p class="dir__legal"><strong>Chapa 05, Corinthians de Verdade</strong><br>Sergio Janikian Presidente · Plano de Governo 2027-2029</p>
+      <p class="dir__legal"><strong>Chapa 05, Corinthians de Verdade</strong><br>Plano de Governo / 2027-2029</p>
     </div>
   </div>
 </footer>
